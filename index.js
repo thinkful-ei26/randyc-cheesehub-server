@@ -22,6 +22,36 @@ app.use(
   })
 );
 
+//test
+// app.get('/users', (req,res) =>{
+//   res.json({msg: 'Hello World!!!'});
+// });
+
+app.get('/cheeses', (req,res) =>{
+  res.json({
+    cheeses : [
+      'Bath Blue',
+      'Barkham Blue',
+      'Buxton Blue',
+      'Cheshire Blue',
+      'Devon Blue',
+      'Dorset Blue Vinney',
+      'Dovedale',
+      'Exmoor Blue',
+      'Harbourne Blue',
+      'Lanark Blue',
+      'Lymeswold',
+      'Oxford Blue',
+      'Shropshire Blue',
+      'Stichelton',
+      'Stilton',
+      'Blue Wensleydale',
+      'Yorkshire Blue'
+    ]
+ 
+  });
+});
+
 function runServer(port = PORT) {
   const server = app
     .listen(port, () => {
